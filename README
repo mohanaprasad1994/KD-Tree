@@ -1,0 +1,24 @@
+KDTree.h - Contains the KDTree library
+test.cpp - Contains test modules
+build_kdtree.cpp - code to build and save a tree
+query_kdtree.cpp - code to load a saved tree, qury it and store the output
+
+written in c++11
+
+on Mac its compiled using
+clang++ -std=c++11 -stdlib=libc++ test.cpp -o test
+clang++ -std=c++11 -stdlib=libc++ build_kdtree.cpp -o build_tree
+clang++ -std=c++11 -stdlib=libc++ query_kdtree.cpp -o query_tree
+
+On ubuntu 
+g++ -std=c++11 test.cpp -o test
+g++ -std=c++11 build_kdtree.cpp -o build_tree
+g++ -std=c++11 query_kdtree.cpp -o query_tree
+
+to run
+./test
+./build_tree <input csv file> <location to save the tree>
+./query_tree <location to saved tree file> <query csv file> <output file path>
+
+
+Output for sample_data.csv and query_data.csv can be found in "out.txt"
